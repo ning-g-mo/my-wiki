@@ -2,140 +2,133 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+// 注意：此配置文件运行在Node.js环境，不要使用浏览器API或JSX语法
 
 const config: Config = {
-  title: '柠枺',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  // 基础配置
+  title: '柠枺', // 网站标题（显示在浏览器标签页和网站头部）
+  tagline: 'ai重度依赖症', // 网站标语（通常显示在首页的副标题位置）
+  favicon: 'img/favicon.ico', // 浏览器标签页图标
 
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  // 部署配置
+  url: 'https://lemwood.une', // 生产环境访问地址
+  baseUrl: '/', // 网站的基础路径（GitHub Pages部署时通常设为 '/项目名/'）
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  // GitHub Pages部署配置（如果不用GitHub Pages可忽略）
+  organizationName: 'ning-g-mo', // GitHub组织/用户名
+  projectName: 'wiki', // GitHub仓库名
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  // 构建配置
+  onBrokenLinks: 'throw', // 遇到损坏链接时抛出错误（可选值：ignore | warn | throw）
+  onBrokenMarkdownLinks: 'warn', // 遇到损坏的Markdown链接时警告
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  // 国际化配置
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh-CN', // 默认语言
+    locales: ['zh-CN', 'en'], // 支持的语言列表（如需中文支持可添加 'zh-Hans'）
+    path: './i18n',
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+        htmlLang: 'en-US',
+        calendar: 'gregory',
+        path: 'en',
+      },
+      "zh-CN": {
+        label: '简体中文',
+        direction: 'ltr',
+        htmlLang: 'zh-CN',
+        calendar: 'gregory',
+        path: '.',
+      },
+    },
   },
 
+  // 预设配置
   presets: [
     [
       'classic',
       {
+        // 文档模块配置
         docs: {
-          sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          sidebarPath: './sidebars.ts', // 侧边栏配置文件路径
+          editUrl: // 文档编辑链接（建议改为你的仓库地址）
+            'https://github.com/ning-g-mo/wiki/tree/main/packages/create-docusaurus/templates/shared/',
         },
+        // 博客模块配置
         blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
+          showReadingTime: true, // 显示阅读时间
+          feedOptions: { // RSS订阅配置
+            type: ['rss', 'atom'], 
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+          editUrl: // 博客编辑链接（建议改为你的仓库地址）
+            'https://github.com/ning-g-mo/wiki/tree/main/packages/create-docusaurus/templates/shared/',
+          // 博客内容校验配置
+          onInlineTags: 'warn', // 行内标签警告
+          onInlineAuthors: 'warn', // 行内作者警告 
+          onUntruncatedBlogPosts: 'warn', // 未截断的博客文章警告
         },
+        // 主题配置
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: './src/css/custom.css', // 自定义CSS文件路径
         },
       } satisfies Preset.Options,
     ],
   ],
 
+  // 主题配置
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
-    navbar: {
-      title: 'My Site',
+    image: 'img/docusaurus-social-card.jpg', // 社交媒体分享卡片图片
+    navbar: { // 导航栏配置
+      title: '柠枺',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'My Site Logo', // logo的alt文本（无障碍访问需要）
+        src: 'img/logo.svg', // logo图片路径
       },
-      items: [
+      items: [ // 导航项配置
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          type: 'localeDropdown',
           position: 'left',
-          label: 'Tutorial',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          type: 'docSidebar', // 文档侧边栏类型
+          sidebarId: 'tutorialSidebar', // 对应侧边栏ID
+          position: 'left', // 显示位置
+          label: '文档', // 显示文本
+        },
+        {to: '/blog', label: '博客', position: 'left'}, // 博客链接
+        {
+          href: 'https://github.com/ning-g-mo/wiki',
           label: 'GitHub',
-          position: 'right',
+          position: 'right', // 右侧显示
         },
       ],
     },
-    footer: {
-      style: 'dark',
-      links: [
+    footer: { // 页脚配置
+      style: 'dark', // 主题风格
+      links: [ // 链接分组
         {
-          title: 'Docs',
+          title: '文档',
           items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
+            { label: '文档', to: '/docs/intro' }
           ],
         },
         {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
+          title: '关于我',
+          items: [ /* 社区链接 */ ]
         },
         {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
+          title: '其他',
+          items: [ /* 其他链接 */ ]
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `版权所有 © ${new Date().getFullYear()} , 此网站基于 <a href="https://docusaurus.io/">Docusaurus</a>构建。`, // 动态显示当前年份
     },
-    prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+    prism: { // 代码块高亮配置
+      theme: prismThemes.github, // 亮色主题
+      darkTheme: prismThemes.dracula, // 暗色主题
     },
   } satisfies Preset.ThemeConfig,
 };

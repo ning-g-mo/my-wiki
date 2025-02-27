@@ -1,0 +1,22 @@
+{
+  "link.title.文档": {
+    "message": "文档",
+    "description": "The title of the footer links column with title=文档 in the footer"
+  },
+  "link.title.关于我": {
+    "message": "关于我",
+    "description": "The title of the footer links column with title=关于我 in the footer"
+  },
+  "link.title.其他": {
+    "message": "其他",
+    "description": "The title of the footer links column with title=其他 in the footer"
+  },
+  "link.item.label.文档": {
+    "message": "文档",
+    "description": "The label of footer link with label=文档 linking to /docs/intro"
+  },
+  "copyright": {
+    "message": "版权所有 © 2025 , 此网站基于 <a href=\"https://docusaurus.io/\">Docusaurus</a>构建。",
+    "description": "The footer copyright"
+  }
+}

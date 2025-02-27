@@ -5,7 +5,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
-
+import { translate } from '@docusaurus/Translate'; // 新增翻译工具
 import styles from './index.module.css';
 
 function HomepageHeader() {
@@ -21,7 +21,10 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            {translate({
+              id: 'homepage.ctaButton',
+              message: '快速入门指南 - 5分钟 ⏱️'
+            })}
           </Link>
         </div>
       </div>
@@ -33,8 +36,14 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={translate({
+        id: 'homepage.metaTitle',
+        message: `欢迎访问 {title}`,
+      })}
+      description={translate({
+        id: 'homepage.metaDescription',
+        message: '专业的文档网站解决方案'
+      })}>
       <HomepageHeader />
       <main>
         <HomepageFeatures />

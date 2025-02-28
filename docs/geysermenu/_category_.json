@@ -1,0 +1,10 @@
+{
+    "position": 3,
+    "label": "GeyserMenu",
+    "collapsible": true,
+    "collapsed": false,
+    "link": {
+        "type": "generated-index",
+        "title": "GeyserMenu" 
+    }
+}

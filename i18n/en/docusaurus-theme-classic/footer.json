@@ -1,22 +1,38 @@
 {
   "link.title.文档": {
-    "message": "文档",
+    "message": "Documentation",
     "description": "The title of the footer links column with title=文档 in the footer"
   },
-  "link.title.关于我": {
-    "message": "关于我",
-    "description": "The title of the footer links column with title=关于我 in the footer"
+  "link.title.社区": {
+    "message": "Community",
+    "description": "The title of the footer links column with title=社区 in the footer"
   },
-  "link.title.其他": {
-    "message": "其他",
-    "description": "The title of the footer links column with title=其他 in the footer"
+  "link.item.label.快速开始": {
+    "message": "Quick Start",
+    "description": "The label of footer link with label=快速开始 linking to /docs/intro"
   },
-  "link.item.label.文档": {
-    "message": "文档",
-    "description": "The label of footer link with label=文档 linking to /docs/intro"
+  "link.item.label.leaves整合包": {
+    "message": "Leaves Modpack",
+    "description": "The label of footer link with label=leaves整合包 linking to /docs/leaves/index"
+  },
+  "link.item.label.geysermenu": {
+    "message": "GeyserMenu",
+    "description": "The label of footer link with label=geysermenu linking to /docs/geysermenu/index"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/ning-g-mo/wiki"
+  },
+  "link.item.label.QQ群": {
+    "message": "QQ Group",
+    "description": "The label of footer link with label=QQ群 linking to http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=R8CI4AuNuwtwT_ltnoEW8HE8Db02TaHu&authKey=OHno5zsNB%2BxNB0dpseSPbItJhpSwyFfYBhs%2BsMEgFqDl8Q8eB605BlZv0fvxkWVo&noverify=0&group_code=603902151"
   },
   "copyright": {
-    "message": "版权所有 © 2025 , 此网站基于 <a href=\"https://docusaurus.io/\">Docusaurus</a>构建。",
+    "message": "\n        <div style=\"margin-top: 2rem; border-top: 1px solid #444; padding-top: 1rem\">\n          <div>\n            Copyright © 2025 by 柠枺 · \n          </div>\n          <div>\n            This website is built using <a href=\"https://docusaurus.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Docusaurus</a>.\n          </div>\n        </div>\n      ",
     "description": "The footer copyright"
+  },
+  "logo.alt": {
+    "message": "柠枺 Logo",
+    "description": "The alt text of footer logo"
   }
 }

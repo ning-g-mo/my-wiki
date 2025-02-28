@@ -3,16 +3,20 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.tutorialSidebar.category.Tutorial - Basics": {
-    "message": "Tutorial - Basics",
-    "description": "The label for category Tutorial - Basics in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.leaves": {
+    "message": "leaves",
+    "description": "The label for category leaves in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Tutorial - Basics.link.generated-index.description": {
-    "message": "5 minutes to learn the most important Docusaurus concepts.",
-    "description": "The generated-index page description for category Tutorial - Basics in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.leaves.link.generated-index.title": {
+    "message": "leaves",
+    "description": "The generated-index page title for category leaves in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Tutorial - Extras": {
-    "message": "Tutorial - Extras",
-    "description": "The label for category Tutorial - Extras in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.GeyserMenu": {
+    "message": "GeyserMenu",
+    "description": "The label for category GeyserMenu in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.GeyserMenu.link.generated-index.title": {
+    "message": "GeyserMenu",
+    "description": "The generated-index page title for category GeyserMenu in sidebar tutorialSidebar"
   }
 }

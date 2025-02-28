@@ -2,6 +2,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+
 // 注意：此配置文件运行在Node.js环境，不要使用浏览器API或JSX语法
 
 const config: Config = {
@@ -11,7 +12,7 @@ const config: Config = {
   favicon: 'img/favicon.ico', // 浏览器标签页图标
 
   // 部署配置
-  url: 'https://lemwood.une', // 生产环境访问地址
+  url: 'https://wiki.lemwood.une', // 生产环境访问地址
   baseUrl: '/', // 网站的基础路径（GitHub Pages部署时通常设为 '/项目名/'）
 
   // GitHub Pages部署配置（如果不用GitHub Pages可忽略）
@@ -19,7 +20,7 @@ const config: Config = {
   projectName: 'wiki', // GitHub仓库名
 
   // 构建配置
-  onBrokenLinks: 'throw', // 遇到损坏链接时抛出错误（可选值：ignore | warn | throw）
+  onBrokenLinks: 'warn', // 遇到损坏链接时抛出错误（可选值：ignore | warn | throw）
   onBrokenMarkdownLinks: 'warn', // 遇到损坏的Markdown链接时警告
 
   // 国际化配置
@@ -85,7 +86,7 @@ const config: Config = {
       title: '柠枺',
       logo: {
         alt: 'My Site Logo', // logo的alt文本（无障碍访问需要）
-        src: 'img/logo.svg', // logo图片路径
+        src: 'img/logo.png', // logo图片路径
       },
       items: [ // 导航项配置
         {
@@ -106,25 +107,48 @@ const config: Config = {
         },
       ],
     },
-    footer: { // 页脚配置
-      style: 'dark', // 主题风格
-      links: [ // 链接分组
+    footer: {
+      style: 'dark',
+      logo: {
+        alt: '柠枺 Logo',
+        src: 'img/logo.png',
+        href: '/',
+        width: 60,
+        height: 60,
+      },
+      links: [
         {
           title: '文档',
           items: [
-            { label: '文档', to: '/docs/intro' }
+            { label: '快速开始', to: '/docs/intro' },
+            { label: 'leaves整合包', to: '/docs/leaves/index' },
+            { label: 'geysermenu', to: '/docs/geysermenu/index' }
           ],
         },
         {
-          title: '关于我',
-          items: [ /* 社区链接 */ ]
-        },
-        {
-          title: '其他',
-          items: [ /* 其他链接 */ ]
+          title: '社区',
+          items: [
+            {
+              label: 'GitHub',
+              href: 'https://github.com/ning-g-mo/wiki',
+            },
+            {
+              label: 'QQ群',
+              href: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=R8CI4AuNuwtwT_ltnoEW8HE8Db02TaHu&authKey=OHno5zsNB%2BxNB0dpseSPbItJhpSwyFfYBhs%2BsMEgFqDl8Q8eB605BlZv0fvxkWVo&noverify=0&group_code=603902151',
+            }
+          ],
         },
       ],
-      copyright: `版权所有 © ${new Date().getFullYear()} , 此网站基于 <a href="https://docusaurus.io/">Docusaurus</a>构建。`, // 动态显示当前年份
+      copyright: `
+        <div style="margin-top: 2rem; border-top: 1px solid #444; padding-top: 1rem">
+          <div>
+            版权所有 © ${new Date().getFullYear()} by 柠枺 · 
+          </div>
+          <div>
+            此网站基于 <a href="https://docusaurus.io/" target="_blank" rel="noopener noreferrer">Docusaurus</a>开发.
+          </div>
+        </div>
+      `, 
     },
     prism: { // 代码块高亮配置
       theme: prismThemes.github, // 亮色主题

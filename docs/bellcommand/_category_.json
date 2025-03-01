@@ -1,0 +1,10 @@
+{
+    "position": 4,
+    "label": "BellCommand",
+    "collapsible": true,
+    "collapsed": false,
+    "link": {
+        "type": "generated-index",
+        "title": "BellCommand" 
+    }
+}

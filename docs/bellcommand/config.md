@@ -174,8 +174,8 @@ items:
 # 8. 确保所有命令都是服务器支持的 (Ensure all commands are supported by the server)
 
 auto-give:
-  enabled: true  是否启用自动给予
-  join: true   重新加入是否给予
+  enabled: true  #是否启用自动给予
+  join: true   #重新加入是否给予
   first-join: true  # 是否仅在首次加入时给予
   respawn: true   #重生是否给予
   items:

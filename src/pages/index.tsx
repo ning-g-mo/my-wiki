@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import HomepageFeatures from
 import Heading from '@theme/Heading';
 import { translate } from '@docusaurus/Translate'; // 新增翻译工具
 import styles from './index.module.css';
@@ -23,7 +23,7 @@ function HomepageHeader() {
             to="/docs/intro">
             {translate({
               id: 'homepage.ctaButton',
-              message: '快速入门指南 - 5分钟 ⏱️'
+              message: '开始阅读我的文档'
             })}
           </Link>
         </div>
@@ -38,11 +38,11 @@ export default function Home(): ReactNode {
     <Layout
       title={translate({
         id: 'homepage.metaTitle',
-        message: `欢迎访问 {title}`,
+        message: `欢迎访问`,
       })}
       description={translate({
         id: 'homepage.metaDescription',
-        message: '专业的文档网站解决方案'
+        message: '专业的ai开发者('
       })}>
       <HomepageHeader />
       <main>

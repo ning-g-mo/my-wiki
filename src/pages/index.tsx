@@ -46,7 +46,7 @@ export default function Home(): ReactNode {
       })}>
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+       <HomepageFeatures />
       </main>
     </Layout>
   );

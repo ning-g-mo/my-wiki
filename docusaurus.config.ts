@@ -8,7 +8,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   // 基础配置
   title: '柠枺', // 网站标题（显示在浏览器标签页和网站头部）
-  tagline: 'ai重度依赖症', // 网站标语（通常显示在首页的副标题位置）
+  tagline: '得不到的，伸手都多余', // 网站标语（通常显示在首页的副标题位置）
   favicon: 'img/favicon.ico', // 浏览器标签页图标
 
   // 部署配置
@@ -122,7 +122,8 @@ const config: Config = {
           items: [
             { label: '快速开始', to: '/docs/intro' },
             { label: 'leaves整合包', to: '/docs/leaves/index' },
-            { label: 'geysermenu', to: '/docs/geysermenu/index' }
+            { label: 'geysermenu', to: '/docs/geysermenu/index' },
+            { label: 'bellcommand', to: '/docs/bellcommand/index'},
           ],
         },
         {

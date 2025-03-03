@@ -121,9 +121,9 @@ const config: Config = {
           title: '文档',
           items: [
             { label: '快速开始', to: '/docs/intro' },
-            { label: 'leaves整合包', to: '/docs/leaves/index' },
-            { label: 'geysermenu', to: '/docs/geysermenu/index' },
-            { label: 'bellcommand', to: '/docs/bellcommand/index'},
+            { label: 'leaves整合包', to: '/docs/leaves' },
+            { label: 'geysermenu', to: '/docs/geysermenu' },
+            { label: 'bellcommand', to: '/docs/bellcommand'},
           ],
         },
         {

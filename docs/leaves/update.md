@@ -38,6 +38,6 @@ title: 更新日志
 - 更新iseeyo玩家录制
 - 更新geysermenu
 ### 新增
--新增aqqbot插件
+- 新增aqqbot插件
 ### 修复
 - 修复v1.7.2上物品菜单无权限问题

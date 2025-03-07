@@ -265,7 +265,7 @@ use-online-uuid-in-tablist: true  # 使用在线 UUID
 enable-redisbungee-support: true  # 启用 RedisBungee 支持
 ```
 ### 关于占位符支持
-::: warning 注意
+:::warning 注意
 PlaceholderAPI 是必须的，否则你的大部分占位符不会生效。
 :::
 玩家和服务器相关占位符支持方法，你可以运行以下两个命令:

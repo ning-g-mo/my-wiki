@@ -18,5 +18,21 @@
   "sidebar.tutorialSidebar.category.GeyserMenu.link.generated-index.title": {
     "message": "GeyserMenu",
     "description": "The generated-index page title for category GeyserMenu in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.ai 开发": {
+    "message": "ai",
+    "description": "The label for category ai 开发 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.ai 开发.link.generated-index.title": {
+    "message": "ai",
+    "description": "The generated-index page title for category ai 开发 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.BellCommand": {
+    "message": "BellCommand",
+    "description": "The label for category BellCommand in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.BellCommand.link.generated-index.title": {
+    "message": "BellCommand",
+    "description": "The generated-index page title for category BellCommand in sidebar tutorialSidebar"
   }
 }

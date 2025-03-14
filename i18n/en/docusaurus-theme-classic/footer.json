@@ -13,11 +13,11 @@
   },
   "link.item.label.leaves整合包": {
     "message": "Leaves Modpack",
-    "description": "The label of footer link with label=leaves整合包 linking to /docs/leaves/index"
+    "description": "The label of footer link with label=leaves整合包 linking to /docs/leaves"
   },
   "link.item.label.geysermenu": {
     "message": "GeyserMenu",
-    "description": "The label of footer link with label=geysermenu linking to /docs/geysermenu/index"
+    "description": "The label of footer link with label=geysermenu linking to /docs/geysermenu"
   },
   "link.item.label.GitHub": {
     "message": "GitHub",
@@ -34,5 +34,9 @@
   "logo.alt": {
     "message": "柠枺 Logo",
     "description": "The alt text of footer logo"
+  },
+  "link.item.label.bellcommand": {
+    "message": "bellcommand",
+    "description": "The label of footer link with label=bellcommand linking to /docs/bellcommand"
   }
 }

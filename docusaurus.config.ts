@@ -148,6 +148,9 @@ const config: Config = {
           <div>
             此网站基于 <a href="https://docusaurus.io/" target="_blank" rel="noopener noreferrer">Docusaurus</a>开发.
           </div>
+          <div>
+            <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">新ICP备2024015133号-3</a>
+          </div>
         </div>
       `, 
     },

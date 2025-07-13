@@ -5,6 +5,17 @@ title: 更新日志
 
 更新日志一般在这更新
 
+## 1.8.1  补充性更新
+### 新增
+- geyserskinmanager （自汉化编译）插件，用于让JAVA版玩家能够显示基岩版皮肤。
+- viaversion 插件，用于让最新基岩版能够进入服务器，当然JAVA版最新版也能进入。
+### 更新
+- minimotd
+- geyserextras
+- geysermenu
+### 删除
+- aqqbot
+
 ## 1.8  菜单系统更新
 
 ### 新增

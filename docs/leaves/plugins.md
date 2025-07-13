@@ -9,7 +9,7 @@ title: 插件列表
 |    插件     |  用途    |  来源   |   注意事项  |
 |----------|--------|-------|---------|
 |authme|注册/登录|[modrinth](https://modrinth.com/plugin/authmerereloaded)|如果你开启了正版模式，并且不需要登录保护，请删除插件|
-|AQQbot|群服互联插件，依赖onebot|[minebbs](https://www.minebbs.com/resources/aqqbot.9921/)|用不着请删除|
+|AQQbot（已删）|群服互联插件，依赖onebot|[minebbs](https://www.minebbs.com/resources/aqqbot.9921/)|用不着请删除|
 |AntiPopup|防止弹窗，解决聊天密钥丢失|[modrinth](https://modrinth.com/plugin/antipopup)|无|
 |BedrockParity|修复优化部分基岩版上的问题|[modrinth](https://modrinth.com/plugin/bedrockparity)|无|
 |BedrockPlayerSupport|对基岩版提供登录跳过，home表单等内容|[modrinth](https://modrinth.com/plugin/bedrockplayersupport)|无|
@@ -22,6 +22,7 @@ title: 插件列表
 |floodgate|geyser的拓展性插件，提供Xbox验证而不是正版与离线，额外提供API支持|[官网](https://geysermc.org/download?project=floodgate)|注意，部分插件需要依赖它才能正常工作|
 |GeyserExtras|为基岩版提供JAVA版的战斗与声音，tab栏查看与信息统计等|[modrinth](https://modrinth.com/plugin/geyserextras)|插件目前处于beta测试阶段，请谨慎使用|
 |GeyserMenu|[自制]为基岩版提供表单支持|[minebbs](https://www.minebbs.com/resources/geysermenu-geyser.10502/)|需要依赖floodgate|
+|geyserskinmanager|［自汉化编译］让JAVA版玩家能够获取基岩版皮肤|[GitHub](https://github.com/RunicWonders/GeyserSkinManager)|无|
 |geyser|基岩版服务器的核心插件|[官网](https://geysermc.org/)|无|
 |geyserupdater|自动更新geyser核心|[minebbs](https://www.minebbs.com/resources/geyserupdater_cn-geyserupdater-geyser.9491/)|此插件由我本人翻译构建，插件启动完成后报错很正常，请忽略|
 |Hurricane|忽略基岩版玩家卡柱子与滴水石锥|[modrinth](https://modrinth.com/plugin/hurricane)|无|

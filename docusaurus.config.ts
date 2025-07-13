@@ -135,7 +135,7 @@ const config: Config = {
             },
             {
               label: 'QQ群',
-              href: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=R8CI4AuNuwtwT_ltnoEW8HE8Db02TaHu&authKey=OHno5zsNB%2BxNB0dpseSPbItJhpSwyFfYBhs%2BsMEgFqDl8Q8eB605BlZv0fvxkWVo&noverify=0&group_code=603902151',
+              href: 'https://qm.qq.com/q/ayTFeM352U',
             }
           ],
         },
